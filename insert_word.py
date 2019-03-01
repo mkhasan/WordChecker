@@ -1,12 +1,21 @@
 
 import mysql.connector
 
+def RemoveNewLine(str):
+    length = len(str);
+    if str[length-1]=='\n':
+        ret = str[:length-1]
+    else:
+        ret = str
+
+    return ret
+
 def main():
     mydb = mysql.connector.connect(
         host="localhost",
         user="root",
         passwd="test123",
-        database = "TEST_DB"
+        database = "test_db"
     )
 
     mycursor = mydb.cursor()
@@ -22,9 +31,12 @@ def main():
     sql = "INSERT INTO words (kor, eng) VALUES (%s, %s)"
     for x in contents:
         fields = x.split(" ")
-        print(len(fields))
-        #print(fields[1])
-        val = (fields[0], fields[1])
+        #print(len(fields))
+        index = len(fields[1])
+        if fields[1][index-1] == '\r':
+            print("%s" % fields[1][:index-1])
+
+        val = (fields[0], RemoveNewLine(fields[1]))
         mycursor.execute(sql, val)
 
     f.close()
