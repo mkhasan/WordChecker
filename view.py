@@ -10,12 +10,12 @@ from finder import Finder
 
 
 
-FONT_SIZE_NORMAL = 12
-FONT_SIZE_SMALL = 8
+#FONT_SIZE_NORMAL = 12
+#FONT_SIZE_SMALL = 8
 
-FONT_NAME_LARGE = 'TkDefaultFont'
-FONT_NAME_NORMAL = 'TkDefaultFont'
-FONT_NAME_SMALL = 'TkDefaultFont'
+#FONT_NAME_LARGE = 'TkDefaultFont'
+#FONT_NAME_NORMAL = 'TkDefaultFont'
+#FONT_NAME_SMALL = 'TkDefaultFont'
 
 #root = Tk()
 
@@ -31,7 +31,7 @@ class View:
         self.Display()
 
     def Display(self):
-        frame = Frame(self.root,bg="red")
+        frame = Frame(self.root)
         """
         if we use frame = Frame(root,bg="red", width=500, height = 100).pack() instead then frame will get 
         a value of Frame wich is not packed. As a result anything likeLabel(frame, text="hello", anchor=W, bg="green").pack()
@@ -42,7 +42,7 @@ class View:
 
 
         padX = 200
-        WIDTH = 8
+        WIDTH = 20
 
         """
          = Frame(frame, bg="yellow")
@@ -57,7 +57,7 @@ class View:
         self.word = tk.StringVar()
 
         #self.kor.set("")
-        label1 = Label(frame, textvariable = self.word, width=WIDTH, font=(FONT_NAME_LARGE, Conf.FONT_SIZE_LARGE), anchor=CENTER, bg="green")
+        label1 = Label(frame, textvariable = self.word, width=WIDTH, font=(Conf.FONT_NAME_LARGE, Conf.FONT_SIZE_LARGE), anchor=CENTER, bg="white")
         label1.pack(pady=(50,50))
 
         """
@@ -68,16 +68,22 @@ class View:
 
         """
 
-        btnFrame = Frame(frame, bg="yellow")
+        btnFrame = Frame(frame)
         btnFrame.pack(side=TOP, fill="x")
+        """
+        uisng side = TOP annchor W, E does not work in the next case...in that case second button goes below to the 
+        first one
+        """
 
-        Button(btnFrame, text="Next", command=self.PrintNext).pack(side=LEFT, anchor=W, padx=(padX, 0))
+        padY = 50
+        Button(btnFrame, text="Next", command=self.PrintNext).pack(side=LEFT, anchor=W, padx=(padX, 0), pady=(0, padY))
 
-        Button(btnFrame, text="Flip", command=self.Flip).pack(side=RIGHT, anchor=E, padx=(0, padX))
+        Button(btnFrame, text="Flip", command=self.Flip).pack(side=RIGHT, anchor=E, padx=(0, padX), pady=(0, padY))
 
-        control = Frame(self.root, bg="cyan")
+        control = Frame(self.root)
 
-        control.pack(fill="x", side=BOTTOM)
+        padY = 10
+        control.pack(fill="both", side=TOP)
 
         padX = 200
         reload = Frame(control)
@@ -92,10 +98,15 @@ class View:
         Radiobutton(group, text="Random", padx=20, variable=self.isRandom, value=2).pack(anchor=W)
 
         self.isRandom.set(self.finder.isRandom+1)
-        reloadBtn = Button(reload, text="Reset", command=self.Reset, anchor=W, bg="green").pack(side=RIGHT, anchor=CENTER)
+        reloadBtn = Button(reload, text="Reset", command=self.Reset, anchor=W).pack(side=RIGHT, anchor=CENTER)
 
 
-        Button(control, text="Quit", command=self.root.quit).pack(side=RIGHT, padx=(0,100))
+        #Button(control, text="Quit", command=self.root.quit).pack(side=RIGHT, padx=(0,50))
+
+        Frame(self.root, height = 60).pack(fill="x")
+        #testFrm.pack(fill="x")
+        #btn = Button(testFrm, text="Test")
+        #btn.pack(fill="y")
 
         #button = Button(frame, text="click me", side=RIGHT).pack()
 
@@ -134,7 +145,7 @@ def run():
 
 
 
-    root.geometry("%dx%d" % (640, 380))
+    root.geometry("%dx%d" % (640, 300))
 
     root.configure(background="WHITE")
 

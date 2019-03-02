@@ -21,7 +21,7 @@ class Finder:
         sql = "SELECT * FROM "+Conf.TABLENAME
         mycursor.execute(sql)
         self.results = mycursor.fetchall()
-        print(self.results)
+        #print(self.results)
 
 
     def Reset(self, _isRandom):

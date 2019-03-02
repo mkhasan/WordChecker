@@ -3,5 +3,3 @@
 가치 value
 가종 various
 간격 interval
-손 hand
-

@@ -7,7 +7,10 @@ class Conf:
     TABLENAME = "words"
 
     FONT_SIZE_LARGE = 14
-    START_WITH_RANDOMNESS = False
+    FONT_NAME_LARGE = 'TkDefaultFont'
+
+
+    START_WITH_RANDOMNESS = True
 
     SEQ_PLACE = 1
     RANDOM_PLACE = 2

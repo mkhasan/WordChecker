@@ -3,6 +3,7 @@ import mysql.connector
 from conf import Conf
 
 def RemoveNewLine(str):
+
     length = len(str);
     if str[length-1]=='\n':
         ret = str[:length-1]
@@ -31,23 +32,28 @@ def main():
     contents = f.readlines()
     sql = "INSERT INTO words (kor, eng) VALUES (%s, %s)"
     for x in contents:
-        fields = x.split(" ")
-        #print(len(fields))
-        index = len(fields[1])
-        if fields[1][index-1] == '\r':
-            print("%s" % fields[1][:index-1])
 
-        val = (fields[0], RemoveNewLine(fields[1]))
-        mycursor.execute(sql, val)
+        fields = x.split(" ")
+        print("%s size is %d" % (x, len(fields)))
+        #print("%s %d" % (fields[1], int(fields[1][len(fields[1])-1])))
+        #index = len(fields[1])
+        if len(fields) > 1:
+
+            str = ""
+            for count in range(len(fields)-1):
+                #print(fields[count+1])
+                str = str + " " + fields[count+1]
+
+            val = (fields[0], RemoveNewLine(str))
+
+            mycursor.execute(sql, val)
 
     f.close()
 
 
     mydb.commit()
 
-    test = "손"
 
-    print(test)
 
 
 if __name__ == '__main__':
