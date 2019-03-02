@@ -1,5 +1,6 @@
 
 import mysql.connector
+from conf import Conf
 
 def RemoveNewLine(str):
     length = len(str);
@@ -12,10 +13,10 @@ def RemoveNewLine(str):
 
 def main():
     mydb = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        passwd="test123",
-        database = "test_db"
+        host = Conf.HSOT,
+        user = Conf.USER,
+        passwd = Conf.PASSWD,
+        database = Conf.DATABASE
     )
 
     mycursor = mydb.cursor()
