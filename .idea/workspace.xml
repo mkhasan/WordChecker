@@ -4,9 +4,7 @@
     <list default="true" id="21db2076-35bb-4e51-9f38-f47df909b04d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/finder.py" beforeDir="false" afterPath="$PROJECT_DIR$/finder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insert_word.py" beforeDir="false" afterPath="$PROJECT_DIR$/insert_word.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/word_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/word_list.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/insert_word.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+            <state relative-caret-position="735">
+              <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
               <folding>
                 <element signature="e#1#23#0" expanded="true" />
               </folding>
@@ -28,11 +26,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/conf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+            <state relative-caret-position="240">
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Elicitor/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="15" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -46,14 +53,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+            <state relative-caret-position="-248">
+              <caret line="159" column="35" lean-forward="true" selection-start-line="159" selection-start-column="35" selection-end-line="159" selection-end-column="35" />
               <folding>
                 <element signature="e#1#164#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Elicitor/view.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="932" column="23" selection-start-line="932" selection-start-column="17" selection-end-line="932" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -70,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/finder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="435">
+              <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
               <folding>
                 <element signature="e#1#23#0" expanded="true" />
               </folding>
@@ -90,8 +106,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ServiceExit</find>
-      <find>button</find>
       <find>PROCESS_STR</find>
       <find>wrape</find>
       <find>fill</find>
@@ -116,6 +130,12 @@
       <find>font</find>
       <find>width</find>
       <find>RemoveNewLine</find>
+      <find>winfo_</find>
+      <find>update</find>
+      <find>GREEN</find>
+      <find>repeatingText</find>
+      <find>hi</find>
+      <find>repeating</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,10 +148,10 @@
         <option value="$PROJECT_DIR$/viewer.py" />
         <option value="$PROJECT_DIR$/../KWSA/DataAnalyzer/Elicitor/view.py" />
         <option value="$PROJECT_DIR$/work_picker.py" />
-        <option value="$PROJECT_DIR$/conf.py" />
-        <option value="$PROJECT_DIR$/finder.py" />
         <option value="$PROJECT_DIR$/insert_word.py" />
+        <option value="$PROJECT_DIR$/finder.py" />
         <option value="$PROJECT_DIR$/view.py" />
+        <option value="$PROJECT_DIR$/conf.py" />
       </list>
     </option>
   </component>
@@ -154,6 +174,11 @@
             <path>
               <item name="WordChecker" type="b2602c69:ProjectViewProjectNode" />
               <item name="WordChecker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WordChecker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WordChecker" type="462c0819:PsiDirectoryNode" />
+              <item name="Elicitor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -326,25 +351,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tkinter-tutorial-master/examples/dialogs/wanna-quit.py" />
     <entry file="file://$PROJECT_DIR$/tkinter-tutorial-master/examples/dialogs/startup-dialog.py" />
-    <entry file="file://$PROJECT_DIR$/Elicitor/constants.py">
+    <entry file="file://$PROJECT_DIR$/work_picker.py" />
+    <entry file="file://$PROJECT_DIR$/insert_word.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="33" />
+        <state relative-caret-position="735">
+          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+          <folding>
+            <element signature="e#1#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work_picker.py" />
     <entry file="file://$PROJECT_DIR$/word_list.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Elicitor/view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5580">
-          <caret line="389" column="52" selection-start-line="389" selection-start-column="40" selection-end-line="389" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -355,40 +376,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/finder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="435">
+          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
           <folding>
             <element signature="e#1#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/insert_word.py">
+    <entry file="file://$PROJECT_DIR$/Elicitor/view.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-          <folding>
-            <element signature="e#1#23#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="173">
+          <caret line="932" column="23" selection-start-line="932" selection-start-column="17" selection-end-line="932" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Elicitor/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="15" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+        <state relative-caret-position="-248">
+          <caret line="159" column="35" lean-forward="true" selection-start-line="159" selection-start-column="35" selection-end-line="159" selection-end-column="35" />
           <folding>
             <element signature="e#1#164#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
         </state>
       </provider>
     </entry>

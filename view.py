@@ -76,11 +76,27 @@ class View:
         """
 
         padY = 50
-        Button(btnFrame, text="Next", command=self.PrintNext).pack(side=LEFT, anchor=W, padx=(padX, 0), pady=(0, padY))
+        Button(btnFrame, text="Next", command=self.ClickNext, height = 1).pack(side=LEFT, anchor=W, padx=(padX, 0), pady=(0, padY))
+
 
         Button(btnFrame, text="Flip", command=self.Flip).pack(side=RIGHT, anchor=E, padx=(0, padX), pady=(0, padY))
 
+        """    
+        self.root.update()
+        height = nextCmdBtn.winfo_height()
+        print("height is %d" % height)
+        """
+
         control = Frame(self.root)
+
+        self.repeatingText = tk.StringVar()
+        self.repeatingText.set("")
+        Label(btnFrame, textvariable=self.repeatingText, width = 10
+              , font=(Conf.FONT_NAME_SMALL, Conf.FONT_SIZE_SMALL), fg="red").pack(fill="none", expand=True, pady=(0, padY))    # place the widget at the middle
+
+
+
+
 
         padY = 10
         control.pack(fill="both", side=TOP)
@@ -110,19 +126,27 @@ class View:
 
         #button = Button(frame, text="click me", side=RIGHT).pack()
 
-        self.PrintNext()
+        self.PrintNext(False)
 
-    def PrintNext(self):
+    def ClickNext(self):
+        self.PrintNext(True)
+    def PrintNext(self, showRepeatingMsg):
         self.flip = 0
-        self.wordMeaning = self.finder.GetNext()
-        self.Show()
+        (self.wordMeaning, index)= self.finder.GetNext()
+        flag = index == 0 and showRepeatingMsg;
+        self.Show(flag)
 
-    def Show(self):
+    def Show(self, flag):
         self.word.set(self.wordMeaning[self.flip+1])
+        if flag:
+            self.repeatingText.set("Repeating...")
+        else:
+            self.repeatingText.set("")
+
 
     def Flip(self):
         self.flip = 1-self.flip
-        self.Show()
+        self.Show(False)
 
     def Reset(self):
         place = self.isRandom.get()
@@ -134,7 +158,7 @@ class View:
         print(isRandom)
 
         self.finder.Reset(isRandom)
-        self.PrintNext()
+        self.PrintNext(False)
 
 
 root = Tk()

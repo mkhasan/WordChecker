@@ -34,8 +34,9 @@ class Finder:
 
     def GetNext(self):
         ret = self.results[self.permutation[self.nextIndex]]
+        index = self.nextIndex
 
         self.nextIndex = (self.nextIndex+1)%(len(self.permutation))
-        return ret
+        return (ret, index)
 
 
