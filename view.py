@@ -7,7 +7,7 @@ import tkinter as tk
 from conf import Conf
 from finder import Finder
 
-
+from native_cpp import *
 
 
 #FONT_SIZE_NORMAL = 12
@@ -54,11 +54,18 @@ class View:
         frame.pack(fill="x")
 
         """
+
+        self.repeatingText = tk.StringVar()
+        self.repeatingText.set("")
+        Label(frame, textvariable=self.repeatingText, width = 10
+              , font=(Conf.FONT_NAME_SMALL, Conf.FONT_SIZE_SMALL), fg="red").pack(fill="none", expand=True, pady=(20, 10))    # place the widget at the middle
+
+
         self.word = tk.StringVar()
 
         #self.kor.set("")
         label1 = Label(frame, textvariable = self.word, width=WIDTH, font=(Conf.FONT_NAME_LARGE, Conf.FONT_SIZE_LARGE), anchor=CENTER, bg="white")
-        label1.pack(pady=(50,50))
+        label1.pack(pady=(0,50))
 
         """
         self.eng = tk.StringVar()
@@ -76,10 +83,17 @@ class View:
         """
 
         padY = 50
-        Button(btnFrame, text="Next", command=self.ClickNext, height = 1).pack(side=LEFT, anchor=W, padx=(padX, 0), pady=(0, padY))
+        padX = 197
+
+        Button(btnFrame, text="Prev", command=self.ClickPrev, height=1).pack(side=LEFT, anchor=E,
+                                                                             padx=(padX, 0), pady=(0, padY))
+
+        Button(btnFrame, text="Next", command=self.ClickNext, height=1).pack(side=RIGHT, anchor=W,
+                                                                             padx=(0, padX), pady=(0, padY))
 
 
-        Button(btnFrame, text="Flip", command=self.Flip).pack(side=RIGHT, anchor=E, padx=(0, padX), pady=(0, padY))
+        Button(btnFrame, text="Flip", command=self.Flip).pack(side=TOP, anchor=CENTER, pady=(0, padY))
+
 
         """    
         self.root.update()
@@ -88,11 +102,6 @@ class View:
         """
 
         control = Frame(self.root)
-
-        self.repeatingText = tk.StringVar()
-        self.repeatingText.set("")
-        Label(btnFrame, textvariable=self.repeatingText, width = 10
-              , font=(Conf.FONT_NAME_SMALL, Conf.FONT_SIZE_SMALL), fg="red").pack(fill="none", expand=True, pady=(0, padY))    # place the widget at the middle
 
 
 
@@ -130,9 +139,12 @@ class View:
 
     def ClickNext(self):
         self.PrintNext(True)
-    def PrintNext(self, showRepeatingMsg):
+    def ClickPrev(self):
+        self.PrintNext(True, False)
+
+    def PrintNext(self, showRepeatingMsg, forward = True):
         self.flip = 0
-        (self.wordMeaning, index)= self.finder.GetNext()
+        (self.wordMeaning, index)= self.finder.GetNext(forward)
         flag = index == 0 and showRepeatingMsg;
         self.Show(flag)
 
@@ -167,9 +179,18 @@ def run():
     #SCREEN_WIDTH = root.winfo_screenwidth()
     #SCREEN_HEIGHT = root.winfo_screenheight()
 
+    hi = hello('Hasan')
+    print(hi.greet())
 
+    mySplit = split("my_goodness how are you \n \r")
 
-    root.geometry("%dx%d" % (640, 300))
+    kor = "NULL"
+    str = "test"
+    kor = mySplit.kor
+    eng = mySplit.eng
+    print("kor is %s %s" % (kor, eng))
+
+    root.geometry("%dx%d" % (640, 290))
 
     root.configure(background="WHITE")
 

@@ -1,6 +1,7 @@
 
 import mysql.connector
 from conf import Conf
+from native_cpp import *
 
 def RemoveNewLine(str):
 
@@ -33,20 +34,20 @@ def main():
     sql = "INSERT INTO words (kor, eng) VALUES (%s, %s)"
     for x in contents:
 
-        fields = x.split(" ")
-        print("%s size is %d" % (x, len(fields)))
-        #print("%s %d" % (fields[1], int(fields[1][len(fields[1])-1])))
-        #index = len(fields[1])
-        if len(fields) > 1:
+        mySplit = split(x)
+        #print(mySplit.eng)
 
-            str = ""
-            for count in range(len(fields)-1):
-                #print(fields[count+1])
-                str = str + " " + fields[count+1]
 
-            val = (fields[0], RemoveNewLine(str))
+
+
+        if mySplit.size > 1:
+
+
+            val = (mySplit.kor, mySplit.eng)
 
             mycursor.execute(sql, val)
+            
+
 
     f.close()
 

@@ -3,7 +3,7 @@ class Conf:
     HSOT = "localhost"
     USER = "root"
     PASSWD = "test123"
-    DATABASE = "test_db"
+    DATABASE = "TEST_DB"
     TABLENAME = "words"
 
 

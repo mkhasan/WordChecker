@@ -30,13 +30,18 @@ class Finder:
         if _isRandom == True:
             arr = np.random.permutation(arr)
         self.permutation = arr
-        self.nextIndex = 0
+        self.index = -1
 
-    def GetNext(self):
-        ret = self.results[self.permutation[self.nextIndex]]
-        index = self.nextIndex
+    def GetNext(self, forward):
+        if self.index == -1:
+            self.index = 0;
+        else:
+            if forward:
+                self.index = (self.index+1)%(len(self.permutation))
+            else:
+                self.index = (self.index - 1 + len(self.permutation)) % (len(self.permutation))
 
-        self.nextIndex = (self.nextIndex+1)%(len(self.permutation))
-        return (ret, index)
+        ret = self.results[self.permutation[self.index]]
+        return (ret, self.index)
 
 
