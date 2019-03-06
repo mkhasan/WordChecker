@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21db2076-35bb-4e51-9f38-f47df909b04d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/WordChecker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WordChecker.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Elicitor" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finder.py" beforeDir="false" afterPath="$PROJECT_DIR$/finder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/insert_word.py" beforeDir="false" afterPath="$PROJECT_DIR$/insert_word.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/view.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +16,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/insert_word.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+            <state relative-caret-position="366">
+              <caret line="87" column="38" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
               <folding>
                 <element signature="e#1#23#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Elicitor/data_manager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1327">
+              <caret line="77" column="33" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="33" />
+              <folding>
+                <element signature="e#1#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Elicitor/plot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="161" column="78" selection-start-line="161" selection-start-column="67" selection-end-line="161" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -43,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="146" column="62" selection-start-line="146" selection-start-column="62" selection-end-line="146" selection-end-column="62" />
+            <state relative-caret-position="3180">
+              <caret line="224" column="9" selection-start-line="223" selection-end-line="224" selection-end-column="9" />
               <folding>
                 <element signature="e#1#164#0" expanded="true" />
               </folding>
@@ -52,14 +67,44 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/excel_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="21" selection-start-line="23" selection-end-line="31" selection-end-column="21" />
+              <folding>
+                <element signature="e#14#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/conf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/finder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
+            <state relative-caret-position="645">
               <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
               <folding>
                 <element signature="e#1#23#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exception_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="1" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -75,15 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>greenBall</find>
-      <find>Display</find>
-      <find>wo</find>
-      <find>KOR.</find>
-      <find>KOR</find>
-      <find>Reset</find>
-      <find>STringvar</find>
-      <find>red</find>
-      <find>yell</find>
       <find>cyan</find>
       <find>green</find>
       <find>second</find>
@@ -105,6 +141,15 @@
       <find>ClickNext</find>
       <find>findN</find>
       <find>nextIndex</find>
+      <find>s</find>
+      <find>currIndex</find>
+      <find>GetDictIndex</find>
+      <find>appe</find>
+      <find>blockData</find>
+      <find>trData</find>
+      <find>elapsed_sec</find>
+      <find>index =</find>
+      <find>self.index =</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -117,13 +162,15 @@
         <option value="$PROJECT_DIR$/viewer.py" />
         <option value="$PROJECT_DIR$/../KWSA/DataAnalyzer/Elicitor/view.py" />
         <option value="$PROJECT_DIR$/work_picker.py" />
-        <option value="$PROJECT_DIR$/conf.py" />
         <option value="$PROJECT_DIR$/parser_cpp/src/parser_cpp.cpp" />
         <option value="$PROJECT_DIR$/parser_cpp/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/parser_cpp/Makefile" />
-        <option value="$PROJECT_DIR$/insert_word.py" />
-        <option value="$PROJECT_DIR$/view.py" />
         <option value="$PROJECT_DIR$/finder.py" />
+        <option value="$PROJECT_DIR$/view.py" />
+        <option value="$PROJECT_DIR$/exception_test.py" />
+        <option value="$PROJECT_DIR$/excel_test.py" />
+        <option value="$PROJECT_DIR$/insert_word.py" />
+        <option value="$PROJECT_DIR$/conf.py" />
       </list>
     </option>
   </component>
@@ -140,11 +187,26 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="WordChecker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WordChecker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WordChecker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WordChecker" type="462c0819:PsiDirectoryNode" />
+              <item name="Elicitor" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/exception_test.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -181,6 +243,48 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="excel_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="WordChecker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/excel_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="exception_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="WordChecker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exception_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="insert_word" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="WordChecker" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -194,7 +298,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/insert_word.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="PARAMETERS" value="TOPIK_Lists.xlsx 1" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -227,11 +331,15 @@
       <item itemvalue="Python.Unnamed" />
       <item itemvalue="Python.insert_word" />
       <item itemvalue="Python.view" />
+      <item itemvalue="Python.exception_test" />
+      <item itemvalue="Python.excel_test" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.view" />
         <item itemvalue="Python.insert_word" />
+        <item itemvalue="Python.excel_test" />
+        <item itemvalue="Python.exception_test" />
       </list>
     </recent_temporary>
   </component>
@@ -258,7 +366,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.328125" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39844617" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3984375" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -312,7 +420,6 @@
     <entry file="file:///usr/lib/python3.5/tkinter/__init__.py" />
     <entry file="file://$PROJECT_DIR$/Elicitor/view.py" />
     <entry file="file://$PROJECT_DIR$/Elicitor/constants.py" />
-    <entry file="file://$PROJECT_DIR$/conf.py" />
     <entry file="file://$PROJECT_DIR$/boost_1_69_0/libs/python/example/quickstart/extending.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="542">
@@ -323,10 +430,10 @@
     <entry file="file://$PROJECT_DIR$/parser_cpp/src/parser_cpp.cpp" />
     <entry file="file://$PROJECT_DIR$/parser_cpp/Makefile" />
     <entry file="file://$PROJECT_DIR$/parser_cpp/CMakeLists.txt" />
-    <entry file="file://$PROJECT_DIR$/insert_word.py">
+    <entry file="file://$PROJECT_DIR$/finder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+        <state relative-caret-position="645">
+          <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
           <folding>
             <element signature="e#1#23#0" expanded="true" />
           </folding>
@@ -340,23 +447,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/exception_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="1" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/excel_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="21" selection-start-line="23" selection-end-line="31" selection-end-column="21" />
+          <folding>
+            <element signature="e#14#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Elicitor/data_manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1327">
+          <caret line="77" column="33" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="33" />
+          <folding>
+            <element signature="e#1#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Elicitor/plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="161" column="78" selection-start-line="161" selection-start-column="67" selection-end-line="161" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/insert_word.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="87" column="38" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
+          <folding>
+            <element signature="e#1#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/view.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="146" column="62" selection-start-line="146" selection-start-column="62" selection-end-line="146" selection-end-column="62" />
+        <state relative-caret-position="3180">
+          <caret line="224" column="9" selection-start-line="223" selection-end-line="224" selection-end-column="9" />
           <folding>
             <element signature="e#1#164#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/finder.py">
+    <entry file="file://$PROJECT_DIR$/conf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
-          <folding>
-            <element signature="e#1#23#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
         </state>
       </provider>
     </entry>

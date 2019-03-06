@@ -4,7 +4,7 @@ class Conf:
     USER = "root"
     PASSWD = "test123"
     DATABASE = "TEST_DB"
-    TABLENAME = "words"
+    TABLENAME = "words_1"
 
 
     FONT_SIZE_LARGE = 14
@@ -14,10 +14,19 @@ class Conf:
     FONT_NAME_NORMAL = FONT_NAME_LARGE
     FONT_NAME_SMALL = FONT_NAME_LARGE
 
-    START_WITH_RANDOMNESS = True
+    START_WITH_RANDOMNESS = False
 
+    READ_FROM_EXCEL_FILE = True
 
 
     SEQ_PLACE = 1
     RANDOM_PLACE = 2
+
+    class MyException(Exception):
+        def __init__(self, message):
+            self.message = message
+
+        def __str__(self):
+            return "Error: " + self.message
+
 
