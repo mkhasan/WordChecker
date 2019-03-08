@@ -4,8 +4,12 @@ from tkinter import Tk, Entry, W, E, N, S, PhotoImage, Checkbutton, Button, Radi
 
 import tkinter as tk
 
+from tkinter import ttk
+
 from conf import Conf
 from finder import Finder
+
+from word_modify_dlg import *
 
 from native_cpp import *
 
@@ -21,8 +25,12 @@ from native_cpp import *
 
 
 class ChangeWord:
-    def __init__(self, root):
+    def __init__(self, root, parent):
         self.root = root
+        self.parent = parent
+        #self.parent.wm_attributes("-disable", True)
+        #self.parent.()
+
         self.Display()
 
     def Display(self):
@@ -33,9 +41,13 @@ class ChangeWord:
         l = tk.Label(self.root, text="Input")
         l.grid(row=0, column=0)
 
-        b = tk.Button(self.root, text="Okay", command=self.root.destroy)
+        b = tk.Button(self.root, text="Okay", command=self.Destroy)
         b.grid(row=1, column=0)
 
+    def Destroy(self):
+        #self.parent.wm_attributes("-disable", False)
+        #root.grab_release()
+        root.destroy()
 
 
 
@@ -49,7 +61,9 @@ class View:
         self.Display()
 
     def Display(self):
+
         frame = Frame(self.root)
+        self.mainFrm = frame
         """
         if we use frame = Frame(root,bg="red", width=500, height = 100).pack() instead then frame will get 
         a value of Frame wich is not packed. As a result anything likeLabel(frame, text="hello", anchor=W, bg="green").pack()
@@ -61,6 +75,7 @@ class View:
 
         padX = 200
         WIDTH = 20
+        HEIGHT = 10
 
         """
          = Frame(frame, bg="yellow")
@@ -82,12 +97,30 @@ class View:
         self.word = tk.StringVar()
 
         #self.kor.set("")
-        wordLabel = Label(frame, textvariable = self.word, width=WIDTH, font=(Conf.FONT_NAME_LARGE, Conf.FONT_SIZE_LARGE), anchor=CENTER, bg="white")
-        wordLabel.pack(pady=(0,50))
+        #wordLabel = Label(frame, textvariable = self.word, width=WIDTH, font=(Conf.FONT_NAME_LARGE, Conf.FONT_SIZE_LARGE), anchor=CENTER, bg="white")
+        #wordLabel.pack(pady=(0,50))
 
-        wordLabel.bind("<Button>", self.WordToChange)
+        #wordLabel.bind("<Button>", lambda x: (Dialog(frame)))
+
+        #print(type(wordLabel))
 
 
+        self.word.set("hello")
+        btn_color = "white"
+        style = ttk.Style()
+        style.configure('TButton', padding=(0,5), background=btn_color, borderwidth=-1, highlightthickness='20', relief="flat", font=(Conf.FONT_NAME_LARGE, Conf.FONT_SIZE_LARGE), width=WIDTH)
+        style.map("TButton",
+                  #foreground=[('pressed', 'red'), ('active', 'blue')],
+                  background=[('pressed', '!disabled', 'white'), ('active', 'white')],
+                  highlightcolor=[('focus', 'green'),
+                                  ('!focus', 'red')],
+                  relief=[('pressed', 'sunken'),
+                          ('!pressed', 'flat')]
+                  )
+
+
+        backbutton = ttk.Button(frame, command=self.ModifyWord, textvariable=self.word)
+        backbutton.pack(pady=(0, 50))
         """
         self.eng = tk.StringVar()
 
@@ -106,15 +139,17 @@ class View:
         padY = 50
         padX = 197
 
-        Button(btnFrame, text="Prev", command=self.ClickPrev, height=1).pack(side=LEFT, anchor=E,
+        Button(btnFrame, text="Prev", command=self.ClickPrev(), height=1).pack(side=LEFT, anchor=E,
                                                                              padx=(padX, 0), pady=(0, padY))
 
         Button(btnFrame, text="Next", command=self.ClickNext, height=1).pack(side=RIGHT, anchor=W,
                                                                              padx=(0, padX), pady=(0, padY))
 
 
-        Button(btnFrame, text="Flip", command=self.Flip).pack(side=TOP, anchor=CENTER, pady=(0, padY))
+        btn = Button(btnFrame, text="Flip", command=self.Flip)
+        btn.pack(side=TOP, anchor=CENTER, pady=(0, padY))
 
+        #self.root.config(state="disabled")
 
         """    
         self.root.update()
@@ -158,11 +193,39 @@ class View:
 
         self.PrintNext(False)
 
+
+    def ModifyWord(self):
+        (words, index) = self.finder.GetCurr()
+        dlg = WordModifyDlg(self.mainFrm, "Modify", word=words[2])
+
+        if dlg.result != None and words[2] != dlg.result:
+            print("goint to modify")
+
+
     def WordToChange(self, event):
         print("mouse clicked at x=" + str(event.x) + " y=" + str(event.y))
         #self.popup_bonus()
-        win = tk.Toplevel()
-        ChangeWord(win)
+        #win = tk.Toplevel(root)
+        #win.grab_set()
+        #ChangeWord(win, root)
+        #root.wait_window(win)
+        #win.grab_set()
+        self.open_toplevel_window()
+
+        #Dialog(root)
+
+    def open_toplevel_window(self):
+        self.top = Toplevel(self.root)
+        # this forces all focus on the top level until Toplevel is closed
+        self.top.grab_set()
+
+        def replace_text():
+            self.text.delete(1.0, END)
+            self.text.insert(END, "Text From\nToplevel")
+
+        top_button = Button(self.top, text="Replace text in main window",
+                            command=replace_text)
+        top_button.pack()
 
     def popup_bonus(self):
         win = tk.Toplevel()
@@ -194,6 +257,7 @@ class View:
 
 
     def Flip(self):
+
         self.flip = 1-self.flip
         self.Show(False)
 
@@ -210,6 +274,11 @@ class View:
         self.PrintNext(False)
 
 
+import inspect
+
+def test(a, b, c):
+    return a+b+c
+
 root = Tk()
 
 finder = Finder(Conf.START_WITH_RANDOMNESS)
@@ -222,6 +291,9 @@ def run():
     #print(hi.greet())
 
     mySplit = split("my_goodness how are you \n \r")
+
+    #print(type(root.wm_attributes()))
+
 
     kor = "NULL"
     str = "test"
@@ -237,9 +309,13 @@ def run():
 
     root.title("Word Checker")
 
+    #root['state'] = 'disabled'
 
+    #print(tk.ttk.Style.configure().keys())
 
+    func = tk.ttk.Style().configure
 
+    print(ttk.Style().lookup("TButton", "border"))
     #view.Display()
 
 

@@ -44,4 +44,11 @@ class Finder:
         ret = self.results[self.permutation[self.index]]
         return (ret, self.index)
 
+    def GetCurr(self):
+        if self.index < 0:
+            raise Exception
+        ret = self.results[self.permutation[self.index]]
+
+        return (ret, self.index)
+
 
