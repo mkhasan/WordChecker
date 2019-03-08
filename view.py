@@ -20,6 +20,24 @@ from native_cpp import *
 #root = Tk()
 
 
+class ChangeWord:
+    def __init__(self, root):
+        self.root = root
+        self.Display()
+
+    def Display(self):
+
+        #win = tk.Toplevel()
+        self.root.wm_title("Window")
+
+        l = tk.Label(self.root, text="Input")
+        l.grid(row=0, column=0)
+
+        b = tk.Button(self.root, text="Okay", command=self.root.destroy)
+        b.grid(row=1, column=0)
+
+
+
 
 class View:
     def __init__(self, _root, _finder):
@@ -64,8 +82,11 @@ class View:
         self.word = tk.StringVar()
 
         #self.kor.set("")
-        label1 = Label(frame, textvariable = self.word, width=WIDTH, font=(Conf.FONT_NAME_LARGE, Conf.FONT_SIZE_LARGE), anchor=CENTER, bg="white")
-        label1.pack(pady=(0,50))
+        wordLabel = Label(frame, textvariable = self.word, width=WIDTH, font=(Conf.FONT_NAME_LARGE, Conf.FONT_SIZE_LARGE), anchor=CENTER, bg="white")
+        wordLabel.pack(pady=(0,50))
+
+        wordLabel.bind("<Button>", self.WordToChange)
+
 
         """
         self.eng = tk.StringVar()
@@ -137,6 +158,22 @@ class View:
 
         self.PrintNext(False)
 
+    def WordToChange(self, event):
+        print("mouse clicked at x=" + str(event.x) + " y=" + str(event.y))
+        #self.popup_bonus()
+        win = tk.Toplevel()
+        ChangeWord(win)
+
+    def popup_bonus(self):
+        win = tk.Toplevel()
+        win.wm_title("Window")
+
+        l = tk.Label(win, text="Input")
+        l.grid(row=0, column=0)
+
+        b = tk.Button(win, text="Okay", command=win.destroy)
+        b.grid(row=1, column=0)
+
     def ClickNext(self):
         self.PrintNext(True)
     def ClickPrev(self):
@@ -167,7 +204,7 @@ class View:
         elif place == Conf.RANDOM_PLACE:
             isRandom = True
 
-        print(isRandom)
+        #print(isRandom)
 
         self.finder.Reset(isRandom)
         self.PrintNext(False)
@@ -175,12 +212,14 @@ class View:
 
 root = Tk()
 
+finder = Finder(Conf.START_WITH_RANDOMNESS)
+view = View(root, finder)
 def run():
     #SCREEN_WIDTH = root.winfo_screenwidth()
     #SCREEN_HEIGHT = root.winfo_screenheight()
 
     hi = hello('Hasan')
-    print(hi.greet())
+    #print(hi.greet())
 
     mySplit = split("my_goodness how are you \n \r")
 
@@ -188,7 +227,7 @@ def run():
     str = "test"
     kor = mySplit.kor
     eng = mySplit.eng
-    print("kor is %s %s" % (kor, eng))
+    #print("kor is %s %s" % (kor, eng))
 
     root.geometry("%dx%d" % (640, 290))
 
@@ -198,13 +237,15 @@ def run():
 
     root.title("Word Checker")
 
-    finder = Finder(Conf.START_WITH_RANDOMNESS)
-    view = View(root, finder)
+
+
 
     #view.Display()
 
 
     root.bind("<Key>", key)
+    root.bind('<Left>', leftKey)
+    root.bind('<Right>', rightKey)
 
     root.mainloop()
 
@@ -213,12 +254,20 @@ def run():
 
 #    print('Exiting main program')
 
+def leftKey(event):
+    #print ("Left key pressed")
+    view.ClickPrev()
+
+def rightKey(event):
+    #print ("Right key pressed")
+    view.ClickNext()
 
 def key(event):
-    print("pressed", repr(event.char))
+    #print("pressed", repr(event.char))
     if event.char == 'q' or event.char == 'Q' or event.char == chr(27):
         root.quit()
-        pass
+    elif event.char == 'f':
+        view.Flip()
 
 
 if __name__ == '__main__':
