@@ -2,47 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21db2076-35bb-4e51-9f38-f47df909b04d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/KICT_MP/.notes.txt.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/actionlib_tutorials/catkin_generated/installspace/actionlib_tutorialsConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/actionlib_tutorials/catkin_generated/installspace/actionlib_tutorialsConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/cam_checker/catkin_generated/installspace/cam_checkerConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/cam_checker/catkin_generated/installspace/cam_checkerConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/cam_checker/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/cam_checker/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/cam_viewer/catkin_generated/installspace/cam_viewerConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/cam_viewer/catkin_generated/installspace/cam_viewerConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/catkin_generated/generate_cached_setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/catkin_generated/generate_cached_setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/catkin_generated/installspace/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/catkin_generated/installspace/_setup_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/catkin_generated/order_packages.py" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/catkin_generated/order_packages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/catkin_generated/setup_cached.sh" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/catkin_generated/setup_cached.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/catkin_generated/stamps/Project/_setup_util.py.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/catkin_generated/stamps/Project/_setup_util.py.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/chapter2_tutorials/catkin_generated/installspace/chapter2_tutorialsConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/chapter2_tutorials/catkin_generated/installspace/chapter2_tutorialsConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/client_interface/catkin_generated/installspace/client_interfaceConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/client_interface/catkin_generated/installspace/client_interfaceConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/my_location/catkin_generated/installspace/my_locationConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/my_location/catkin_generated/installspace/my_locationConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/robot/catkin_generated/installspace/robotConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/robot/catkin_generated/installspace/robotConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/robot_upstart/catkin_generated/installspace/robot_upstartConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/robot_upstart/catkin_generated/installspace/robot_upstartConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/serial_interface/catkin_generated/installspace/serial_interfaceConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/serial_interface/catkin_generated/installspace/serial_interfaceConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/spectator/catkin_generated/installspace/spectatorConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/spectator/catkin_generated/installspace/spectatorConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/xsens_mti_ros_node/src/xsens_driver/catkin_generated/installspace/xsens_driverConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/xsens_mti_ros_node/src/xsens_driver/catkin_generated/installspace/xsens_driverConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/xsens_mti_ros_node/src/xsens_msgs/catkin_generated/installspace/xsens_msgsConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/xsens_mti_ros_node/src/xsens_msgs/catkin_generated/installspace/xsens_msgsConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/_setup_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/actionlib_tutorials/cmake/actionlib_tutorialsConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/actionlib_tutorials/cmake/actionlib_tutorialsConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/cam_checker/cmake/cam_checkerConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/cam_checker/cmake/cam_checkerConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/cam_viewer/cmake/cam_viewerConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/cam_viewer/cmake/cam_viewerConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/chapter2_tutorials/cmake/chapter2_tutorialsConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/chapter2_tutorials/cmake/chapter2_tutorialsConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/client_interface/cmake/client_interfaceConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/client_interface/cmake/client_interfaceConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/my_location/cmake/my_locationConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/my_location/cmake/my_locationConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/robot/cmake/robotConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/robot/cmake/robotConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/robot_upstart/cmake/robot_upstartConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/robot_upstart/cmake/robot_upstartConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/serial_interface/cmake/serial_interfaceConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/serial_interface/cmake/serial_interfaceConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/spectator/cmake/spectatorConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/spectator/cmake/spectatorConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/xsens_driver/cmake/xsens_driverConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/xsens_driver/cmake/xsens_driverConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/xsens_msgs/cmake/xsens_msgsConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/devel/share/xsens_msgs/cmake/xsens_msgsConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/src/actionlib_tutorials/.CMakeLists.txt.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/bin/hello" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/bin/hello" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/src/cam_checker/hello.py" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/src/cam_checker/hello.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/src/client_interface/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/src/client_interface/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_MP/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/WordChecker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WordChecker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/catkin_make.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/build/catkin_make.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KICT_MP/catkin_ws/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_MP/catkin_ws/src/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/finder.py" beforeDir="false" afterPath="$PROJECT_DIR$/finder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insert_word.py" beforeDir="false" afterPath="$PROJECT_DIR$/insert_word.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/word_modify_dlg.py" beforeDir="false" afterPath="$PROJECT_DIR$/word_modify_dlg.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,31 +21,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Elicitor/view.py">
+        <entry file="file://$PROJECT_DIR$/insert_word.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="154" column="16" selection-start-line="154" selection-start-column="16" selection-end-line="154" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/view.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="200" column="33" selection-start-line="200" selection-start-column="33" selection-end-line="200" selection-end-column="33" />
-              <folding>
-                <element signature="e#1#164#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/finder.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="46" column="15" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="15" />
+            <state relative-caret-position="675">
+              <caret line="60" column="17" lean-forward="true" selection-start-line="60" selection-end-line="60" selection-end-column="17" />
               <folding>
                 <element signature="e#1#23#0" expanded="true" />
               </folding>
@@ -86,19 +33,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/lib/python3.6/tkinter/ttk.py">
+        <entry file="file://$PROJECT_DIR$/conf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-35">
-              <caret line="377" column="8" selection-start-line="377" selection-start-column="8" selection-end-line="377" selection-end-column="8" />
+            <state relative-caret-position="240">
+              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modal.py">
+        <entry file="file://$PROJECT_DIR$/word_list.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="21" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="102" column="61" selection-start-line="102" selection-start-column="36" selection-end-line="102" selection-end-column="61" />
+              <folding>
+                <element signature="e#1#164#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/word_modify_dlg.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="176" column="25" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -107,10 +75,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/word_modify_dlg.py">
+        <entry file="file://$PROJECT_DIR$/modal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+            <state relative-caret-position="450">
+              <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="31" selection-end-column="59" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -121,8 +89,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/toplevel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+            <state>
+              <caret column="17" selection-start-column="17" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/popup_bonus.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="24" selection-start-line="4" selection-end-line="12" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/lib/python3.5/tkinter/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3525">
+              <caret line="235" selection-start-line="235" selection-end-line="235" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/finder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="431">
+              <caret line="76" column="81" selection-start-line="76" selection-start-column="81" selection-end-line="76" selection-end-column="81" />
+              <folding>
+                <element signature="e#1#23#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,36 +139,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lamda</find>
-      <find>lam</find>
-      <find>disable</find>
-      <find>keys</find>
-      <find>wm_attributes</find>
-      <find>root</find>
-      <find>run</find>
-      <find>wordL</find>
-      <find>lambda</find>
-      <find>test</find>
-      <find>Style</find>
+      <find>PrintInfo</find>
+      <find>Modify</find>
+      <find>Modify(</find>
+      <find>PrintCur</find>
+      <find>PrintCurr</find>
+      <find>prev</find>
+      <find>ClickNext</find>
+      <find>ClickPrev</find>
+      <find>word</find>
+      <find>self.word</find>
+      <find>curren</find>
+      <find>validate</find>
+      <find>modify</find>
+      <find>regis</find>
+      <find>key</find>
+      <find>red</find>
       <find>configure</find>
-      <find>confi</find>
-      <find>WIDTH</find>
-      <find>dia</find>
-      <find>flip</find>
-      <find>tty</find>
-      <find>ttk</find>
-      <find>`</find>
-      <find>parent</find>
-      <find>buttonbox</find>
-      <find>grid</find>
-      <find>vcmd</find>
-      <find>vali</find>
-      <find>pack</find>
-      <find>transient</find>
-      <find>WordMo</find>
-      <find>clickN</find>
-      <find>WordModifyDlg</find>
-      <find>ModifyWord</find>
+      <find>modified</find>
+      <find>bind</find>
+      <find>pops</find>
+      <find>pop_u</find>
+      <find>destropy</find>
+      <find>destroy</find>
+      <find>lamda</find>
+      <find>my_sele</find>
+      <find>button-3</find>
+      <find>copy_selection</find>
+      <find>self.pop_up</find>
+      <find>mouse_clicked</find>
+      <find>pop_up</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -185,8 +186,6 @@
         <option value="$PROJECT_DIR$/parser_cpp/Makefile" />
         <option value="$PROJECT_DIR$/exception_test.py" />
         <option value="$PROJECT_DIR$/excel_test.py" />
-        <option value="$PROJECT_DIR$/insert_word.py" />
-        <option value="$PROJECT_DIR$/conf.py" />
         <option value="$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/bin/hello" />
         <option value="$PROJECT_DIR$/KICT_MP/catkin_ws/src/robot_upstart/src/robot_upstart/providers.py" />
         <option value="$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/src/cam_checker/hello.py" />
@@ -197,9 +196,12 @@
         <option value="$PROJECT_DIR$/modal.py" />
         <option value="$PROJECT_DIR$/WordModifyDlg.py" />
         <option value="$PROJECT_DIR$/Elicitor/limit_setting_dialog.py" />
-        <option value="$PROJECT_DIR$/word_modify_dlg.py" />
+        <option value="$PROJECT_DIR$/insert_word.py" />
+        <option value="$PROJECT_DIR$/conf.py" />
         <option value="$PROJECT_DIR$/finder.py" />
         <option value="$PROJECT_DIR$/view.py" />
+        <option value="$PROJECT_DIR$/popup_bonus.py" />
+        <option value="$PROJECT_DIR$/word_modify_dlg.py" />
       </list>
     </option>
   </component>
@@ -215,7 +217,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,6 +228,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -245,7 +247,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.view">
+  <component name="RunManager" selected="Python.word_modify_dlg">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="WordChecker" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -267,27 +269,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="insert_word" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="WordChecker" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/insert_word.py" />
-      <option name="PARAMETERS" value="TOPIK_Lists.xlsx 1" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="modal" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="WordChecker" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -301,6 +282,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modal.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="popup_bonus" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="WordChecker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/popup_bonus.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -374,19 +376,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.Unnamed" />
-      <item itemvalue="Python.insert_word" />
       <item itemvalue="Python.view" />
       <item itemvalue="Python.modal" />
       <item itemvalue="Python.toplevel" />
       <item itemvalue="Python.word_modify_dlg" />
+      <item itemvalue="Python.popup_bonus" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.view" />
         <item itemvalue="Python.word_modify_dlg" />
+        <item itemvalue="Python.popup_bonus" />
         <item itemvalue="Python.toplevel" />
+        <item itemvalue="Python.view" />
         <item itemvalue="Python.modal" />
-        <item itemvalue="Python.insert_word" />
       </list>
     </recent_temporary>
   </component>
@@ -404,15 +406,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1613" height="1025" extended-state="6" />
+    <frame x="64" y="-11" width="1217" height="1036" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24905661" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24916108" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.328125" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32741398" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3984375" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -464,15 +466,15 @@
     <entry file="file://$PROJECT_DIR$/tkinter-tutorial-master/examples/dialogs/wanna-quit.py" />
     <entry file="file://$PROJECT_DIR$/tkinter-tutorial-master/examples/dialogs/startup-dialog.py" />
     <entry file="file://$PROJECT_DIR$/work_picker.py" />
-    <entry file="file:///usr/lib/python3.5/tkinter/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/Elicitor/constants.py" />
-    <entry file="file://$PROJECT_DIR$/boost_1_69_0/libs/python/example/quickstart/extending.cpp">
+    <entry file="file:///usr/lib/python3.5/tkinter/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="41" selection-start-line="4" selection-end-line="41" />
+        <state relative-caret-position="3525">
+          <caret line="235" selection-start-line="235" selection-end-line="235" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Elicitor/constants.py" />
+    <entry file="file://$PROJECT_DIR$/boost_1_69_0/libs/python/example/quickstart/extending.cpp" />
     <entry file="file://$PROJECT_DIR$/parser_cpp/src/parser_cpp.cpp" />
     <entry file="file://$PROJECT_DIR$/parser_cpp/Makefile" />
     <entry file="file://$PROJECT_DIR$/parser_cpp/CMakeLists.txt" />
@@ -500,45 +502,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" selection-start-line="31" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/src/cam_checker/console.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/src/cam_checker/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Elicitor/plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="161" column="78" selection-start-line="161" selection-start-column="67" selection-end-line="161" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Elicitor/data_manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1313">
-          <caret line="77" column="33" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="33" />
-          <folding>
-            <element signature="e#1#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/setup.py" />
+    <entry file="file://$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/src/cam_checker/console.py" />
+    <entry file="file://$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/src/cam_checker/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/Elicitor/plot.py" />
+    <entry file="file://$PROJECT_DIR$/Elicitor/data_manager.py" />
     <entry file="file://$PROJECT_DIR$/KICT_MP/catkin_ws/src/robot_upstart/scripts/mutate_files">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -554,43 +522,11 @@
     <entry file="file://$PROJECT_DIR$/KICT_MP/catkin_ws/src/robot_upstart/scripts/uninstall">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/bin/console">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/bin/hello">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/src/cam_checker/hello.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="72" column="21" lean-forward="true" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
-          <folding>
-            <element signature="e#15#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/src/cam_checker/providers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="190" selection-start-line="190" selection-end-line="190" />
-          <folding>
-            <element signature="e#1935#1944#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/src/cam_checker/mutate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="48" column="23" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/bin/console" />
+    <entry file="file://$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/bin/hello" />
+    <entry file="file://$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/src/cam_checker/hello.py" />
+    <entry file="file://$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/src/cam_checker/providers.py" />
+    <entry file="file://$PROJECT_DIR$/KICT_MP/catkin_ws/src/cam_checker/src/cam_checker/mutate.py" />
     <entry file="file://$PROJECT_DIR$/KICT_MP/catkin_ws/src/robot_upstart/src/robot_upstart/job.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -627,83 +563,80 @@
     <entry file="file://$PROJECT_DIR$/KICT_MP/catkin_ws/src/robot_upstart/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file:///usr/lib/python3.6/tkinter/ttk.py" />
+    <entry file="file://$PROJECT_DIR$/WordModifyDlg.py" />
+    <entry file="file://$PROJECT_DIR$/Elicitor/limit_setting_dialog.py" />
+    <entry file="file://$PROJECT_DIR$/Elicitor/view.py" />
     <entry file="file://$PROJECT_DIR$/insert_word.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-750">
-          <caret line="1" column="8" selection-start-line="1" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toplevel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3.6/tkinter/ttk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35">
-          <caret line="377" column="8" selection-start-line="377" selection-start-column="8" selection-end-line="377" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WordModifyDlg.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="21" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Elicitor/limit_setting_dialog.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="107" column="43" lean-forward="true" selection-start-line="107" selection-start-column="43" selection-end-line="107" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Elicitor/view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="154" column="16" selection-start-line="154" selection-start-column="16" selection-end-line="154" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/finder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="46" column="15" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="15" />
+        <state relative-caret-position="675">
+          <caret line="60" column="17" lean-forward="true" selection-start-line="60" selection-end-line="60" selection-end-column="17" />
           <folding>
             <element signature="e#1#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/word_modify_dlg.py">
+    <entry file="file://$PROJECT_DIR$/conf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="240">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="76" column="81" selection-start-line="76" selection-start-column="81" selection-end-line="76" selection-end-column="81" />
+          <folding>
+            <element signature="e#1#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/popup_bonus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="24" selection-start-line="4" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="31" selection-end-column="59" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/toplevel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/view.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="200" column="33" selection-start-line="200" selection-start-column="33" selection-end-line="200" selection-end-column="33" />
+        <state relative-caret-position="174">
+          <caret line="102" column="61" selection-start-line="102" selection-start-column="36" selection-end-line="102" selection-end-column="61" />
           <folding>
             <element signature="e#1#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_modify_dlg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="176" column="25" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>

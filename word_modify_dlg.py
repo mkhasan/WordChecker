@@ -1,9 +1,10 @@
 from tkinter import *
 from conf import Conf
+from tkinter import ttk
 
 class WordModifyDlg(Toplevel):
 
-    def __init__(self, parent, title = None, labelWidth=20, word="animal"):
+    def __init__(self, parent, title = None, labelWidth=20, kor="animal", eng="animal"):
 
         Toplevel.__init__(self, parent)
 
@@ -18,7 +19,7 @@ class WordModifyDlg(Toplevel):
 
         self.labelWidth = labelWidth
 
-        self.word = word
+        self.words = (kor, eng)
 
         body = Frame(self)
         self.initial_focus = self.body(body)
@@ -38,10 +39,24 @@ class WordModifyDlg(Toplevel):
 
         self.initial_focus.focus_set()
 
+        self.bind("<Key>", self.key)
+
+        self.bind("<Button-1>", self.mouse_clicked)
+
+
+        self.pop_up = None
+
         self.wait_window(self)
 
     #
     # construction hooks
+
+    def mouse_clicked(self, event):
+        print("left mouse clicked at " + str(event.x) + " " + str(event.y))
+        if self.pop_up != None:
+            print('going to destropy pop up')
+            self.pop_up.destroy()
+            self.pop_up = None
 
     def body(self, master):
         # create dialog body.  return widget that should have
@@ -101,31 +116,38 @@ class WordModifyDlg(Toplevel):
     def Display(self):
 
         box = Frame(self)
-        currMsg = Label(box, text="Current", font=(Conf.FONT_NAME_NORMAL, Conf.FONT_SIZE_NORMAL))
+
+        currMsg = Label(box, text="Korean", font=(Conf.FONT_NAME_NORMAL, Conf.FONT_SIZE_NORMAL))
         currMsg.grid(row=0, column=0, sticky=W, padx=(0, 10))
 
 
-        self.currStr = StringVar()
-        self.modifiedStr = StringVar()
+        self.korStr = StringVar()
+        self.engStr = StringVar()
 
-        self.currStr.set(self.word)
-        self.modifiedStr.set(self.word)
+        self.korStr.set(self.words[0])
+        self.engStr.set(self.words[1])
 
-        current = Label(box, textvariable=self.currStr, width=self.labelWidth, font=(Conf.FONT_NAME_LARGE, Conf.FONT_SIZE_LARGE), anchor=W, bg="white")
-        current.grid(row=0, column=1, sticky=E)
+        self.okayBtn = Button()
+        okayCommand = self.register(self.check)
+
+        self.kor = Entry(box, textvariable=self.korStr, state='readonly', width=self.labelWidth, font=(Conf.FONT_NAME_LARGE, Conf.FONT_SIZE_LARGE))
+        self.kor.grid(row=0, column=1, sticky=E)
 
         padY = 30
 
-        modifyMsg= Label(box, text="Modified", font=(Conf.FONT_NAME_NORMAL, Conf.FONT_SIZE_NORMAL))
+        modifyMsg= Label(box, text="English", font=(Conf.FONT_NAME_NORMAL, Conf.FONT_SIZE_NORMAL))
         modifyMsg.grid(row=1, column=0, sticky=W, padx=(0, 10), pady=(padY, 0))
 
-        modified = Entry(box, width=self.labelWidth, textvariable=self.modifiedStr, font=(Conf.FONT_NAME_LARGE, Conf.FONT_SIZE_LARGE))
+        modified = Entry(box, validate='key', validatecommand=(okayCommand, '%d', '%i', '%S', '%P'), width=self.labelWidth, textvariable=self.engStr, font=(Conf.FONT_NAME_LARGE, Conf.FONT_SIZE_LARGE))
         modified.grid(row=1, column=1, sticky=E, pady=(padY, 0))
 
         padY = 20
-        Button(box, text="Okay", command=self.on_ok).grid(row=2, column=1, sticky=W, pady=(padY, 0))
+
+        self.okayBtn = Button(box, text="Okay", command=self.on_ok)
+        self.okayBtn.grid(row=2, column=1, sticky=W, pady=(padY, 0))
         Button(box, text="Cancel", command=self.cancel).grid(row=2, column=1, sticky=E, pady=(padY, 0))
 
+        self.kor.bind("<Button-3>", self.copy_selection)
 
         #wordLabel.bind("<Button>", lambda x: (Dialog(frame)))
 
@@ -133,12 +155,62 @@ class WordModifyDlg(Toplevel):
 
         box.pack()
 
+    def popup_bonus(self):
+        win = Toplevel(self)
+        self.pop_up = win
+
+        win.geometry("+%d+%d" % (self.winfo_rootx() + 50,
+                                  self.winfo_rooty() + 50))
+        win.wm_title("Window")
+
+        l = Label(win, text="Input")
+        l.grid(row=0, column=0)
+
+        b = ttk.Button(win, text="Okay", command=self.pop_up_destroy)
+        b.grid(row=1, column=0)
+
+    def pop_up_destroy(self):
+        self.pop_up.destroy
+        self.pop_up = None
+
+    def copy_selection(self, event):
+        print(self.pop_up)
+
+        if self.pop_up != None:
+            self.pop_up.destroy
+            return
+
+        self.popup_bonus()
+        print(str(event.x) + " " + str(event.y))
+        try:
+            print("my_selection: \n" + self.kor.selection_get())
+        except:
+            print("no selection")
+
     def on_ok(self):
-        self.result = self.modifiedStr.get()
+        self.result = self.engStr.get()
         self.ok()
 
 
+    def check(self, why, where, what, value):
+        print(str(why) + "|" + str(where) + "|" + what + "|" + value)
+        my_str = self.engStr.get()
+        print(my_str)
+        if value == self.words[1]:
+            self.okayBtn.configure(text="Okay", fg="black")
+        else:
+            self.okayBtn.configure(text="Modify", fg="red")
+        return True
 
+    def key(self, event):
+        print("pressed", repr(event.char))
+        if event.char == chr(27):
+            self.cancel()
+
+def key(event):
+    print("pressed", repr(event.char))
+    if event.char == chr(27):
+        root.quit()
 
 if __name__ == '__main__':
     root = Tk()
@@ -158,4 +230,7 @@ if __name__ == '__main__':
     if test.result == None:
         print("got None")
 
+    root.bind("<Key>", key)
+
     root.mainloop()
+

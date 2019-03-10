@@ -1,7 +1,7 @@
 
 import mysql.connector
 from conf import Conf
-from native_cpp import *
+#from native_cpp import *
 import conf
 import sys
 import pandas as pd

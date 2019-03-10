@@ -22,6 +22,9 @@ class Finder:
         mycursor.execute(sql)
         self.results = mycursor.fetchall()
         #print(self.results)
+        #self.results[0] = (1, "hi", "hello")
+        #print(type(self.results[0]))
+
 
 
     def Reset(self, _isRandom):
@@ -51,4 +54,25 @@ class Finder:
 
         return (ret, self.index)
 
+
+    def Modify(self, words, result):
+        mydb = mysql.connector.connect(
+            host=Conf.HSOT,
+            user=Conf.USER,
+            passwd=Conf.PASSWD,
+            database=Conf.DATABASE
+        )
+
+        mycursor = mydb.cursor()
+
+        # update words_1 set eng='open1' where entry_no=28
+        sql = "UPDATE " + Conf.TABLENAME + " SET eng='" + result + "' WHERE entry_no=" + str(words[0])
+        print(sql)
+        mycursor.execute(sql)
+
+        mydb.commit()
+        #words[2] = result
+
+
+        self.results[self.permutation[self.index]] = (words[0], words[1], result )
 

@@ -11,7 +11,7 @@ from finder import Finder
 
 from word_modify_dlg import *
 
-from native_cpp import *
+#from native_cpp import *
 
 
 #FONT_SIZE_NORMAL = 12
@@ -139,7 +139,7 @@ class View:
         padY = 50
         padX = 197
 
-        Button(btnFrame, text="Prev", command=self.ClickPrev(), height=1).pack(side=LEFT, anchor=E,
+        Button(btnFrame, text="Prev", command=self.ClickPrev, height=1).pack(side=LEFT, anchor=E,
                                                                              padx=(padX, 0), pady=(0, padY))
 
         Button(btnFrame, text="Next", command=self.ClickNext, height=1).pack(side=RIGHT, anchor=W,
@@ -191,15 +191,20 @@ class View:
 
         #button = Button(frame, text="click me", side=RIGHT).pack()
 
-        self.PrintNext(False)
+        self.Reset()
 
 
     def ModifyWord(self):
         (words, index) = self.finder.GetCurr()
-        dlg = WordModifyDlg(self.mainFrm, "Modify", word=words[2])
+        dlg = WordModifyDlg(self.mainFrm, "Modify", kor=words[1], eng=words[2])
 
         if dlg.result != None and words[2] != dlg.result:
             print("goint to modify")
+            finder.Modify(words, dlg.result)
+            self.PrintCurr(False)
+            self.repeatingText.set("Modified")
+        else:
+            self.repeatingText.set("")
 
 
     def WordToChange(self, event):
@@ -242,11 +247,23 @@ class View:
     def ClickPrev(self):
         self.PrintNext(True, False)
 
+    def PrintCurr(self, showRepeatingMsg):
+        self.flip = 0
+        (self.wordMeaning, index)= self.finder.GetCurr()
+        flag = index == 0 and showRepeatingMsg;
+        self.Show(flag)
+
+
     def PrintNext(self, showRepeatingMsg, forward = True):
         self.flip = 0
         (self.wordMeaning, index)= self.finder.GetNext(forward)
+        #print(forward)
         flag = index == 0 and showRepeatingMsg;
         self.Show(flag)
+
+
+
+
 
     def Show(self, flag):
         self.word.set(self.wordMeaning[self.flip+1])
@@ -287,18 +304,18 @@ def run():
     #SCREEN_WIDTH = root.winfo_screenwidth()
     #SCREEN_HEIGHT = root.winfo_screenheight()
 
-    hi = hello('Hasan')
+#    hi = hello('Hasan')
     #print(hi.greet())
 
-    mySplit = split("my_goodness how are you \n \r")
+#    mySplit = split("my_goodness how are you \n \r")
 
     #print(type(root.wm_attributes()))
 
 
     kor = "NULL"
     str = "test"
-    kor = mySplit.kor
-    eng = mySplit.eng
+#    kor = mySplit.kor
+#    eng = mySplit.eng
     #print("kor is %s %s" % (kor, eng))
 
     root.geometry("%dx%d" % (640, 290))
@@ -339,7 +356,7 @@ def rightKey(event):
     view.ClickNext()
 
 def key(event):
-    #print("pressed", repr(event.char))
+    print("pressed", repr(event.char))
     if event.char == 'q' or event.char == 'Q' or event.char == chr(27):
         root.quit()
     elif event.char == 'f':
